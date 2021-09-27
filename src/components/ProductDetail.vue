@@ -1,0 +1,55 @@
+<template>
+  <div class="container">
+    <div class="image">
+      <img :src="product.image" alt="" />
+    </div>
+    <div class="details">
+      <h2>{{ product.title }}</h2>
+      <h3>Price: {{ product.price }}</h3>
+      <p>{{ product.description }}</p>
+    </div>
+  </div>
+</template>
+<script>
+import axios from "axios";
+export default {
+  props: ["id"],
+  data() {
+    return {
+      product: {},
+    };
+  },
+  mounted() {
+    axios
+      .get("https://fakestoreapi.com/products/" + this.id)
+      .then((response) => {
+        // console.log(response);
+        // const products=[];
+        this.product = response.data;
+        console.log(this.product);
+
+        //   console.log(response.data);
+      });
+  },
+};
+</script>
+<style scoped>
+.container {
+  box-shadow: 0 4px 12px 0 rgb(0 0 0 / 40%);
+  padding: 20px;
+  margin: 60px auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.image,
+.details {
+  margin: 20px;
+}
+
+img {
+  height: 300px;
+  width: 300px;
+}
+</style>
