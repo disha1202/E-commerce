@@ -1,9 +1,13 @@
 # myntra-clone
 
+## Project UI
+```
+https://user-images.githubusercontent.com/58461801/134894036-96825794-e4e4-4baa-b140-ba88387ce05b.mp4
+```
 ## Project setup
 ```
 
-https://user-images.githubusercontent.com/58461801/134894036-96825794-e4e4-4baa-b140-ba88387ce05b.mp4
+
 
 
 npm install
