@@ -2,7 +2,11 @@
 
 ## Project UI
 ```
-https://user-images.githubusercontent.com/58461801/134894036-96825794-e4e4-4baa-b140-ba88387ce05b.mp4
+
+https://user-images.githubusercontent.com/58461801/134894661-bb1ba02c-36bf-47a2-98c6-87b2089ce184.mp4
+
+
+
 ```
 ## Project setup
 ```
