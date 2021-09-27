@@ -7,6 +7,8 @@
       <h2>{{ product.title }}</h2>
       <h3>Price: {{ product.price }}</h3>
       <p>{{ product.description }}</p>
+      <!-- <i18n-n value="product.price" format="currency"></i18n-n> -->
+      <!-- <p>{{ $n(100, "currency") }}</p> -->
     </div>
   </div>
 </template>
@@ -27,6 +29,7 @@ export default {
         // const products=[];
         this.product = response.data;
         console.log(this.product);
+        console.log(this.product.price);
 
         //   console.log(response.data);
       });
@@ -36,11 +39,13 @@ export default {
 <style scoped>
 .container {
   box-shadow: 0 4px 12px 0 rgb(0 0 0 / 40%);
-  padding: 20px;
+  padding: 40px;
   margin: 60px auto;
   display: flex;
   flex-direction: row;
   align-items: center;
+  border-radius: 30px;
+  width: 60%;
 }
 
 .image,

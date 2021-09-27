@@ -12,7 +12,8 @@ import ProductsSection from "./components/ProductsSection.vue";
 import ProductDetail from "./components/ProductDetail.vue";
 import userLogin from "./components/userLogin.vue";
 import userRegister from "./components/userRegister.vue";
-const app = createApp(App);
+import i18n from "./i18n.js";
+const app = createApp(App).use(i18n);
 
 const router = createRouter({
   history: createWebHistory(),

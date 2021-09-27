@@ -8,7 +8,11 @@
           <b>{{ product.title }}</b>
         </p></router-link
       >
-      <p><b>Price :</b>{{ product.price }}</p>
+      <p>
+        <b>Price :</b>
+        <i18n-n :value="product.price" format="currency"></i18n-n>
+      </p>
+      <!-- <p><b>Price :</b> {{ $n(100, "currency") }}</p> -->
       <!-- <p>Product Details :{{product.description}}</p> -->
     </div>
   </div>
@@ -84,6 +88,7 @@ export default {
   padding: 20px;
   margin: 50px 20px;
   width: 30%;
+  border-radius: 30px;
 }
 a {
   color: black;
