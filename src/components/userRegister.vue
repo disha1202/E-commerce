@@ -2,16 +2,19 @@
   <div class="container">
     <form>
       <div class="name">
-        <label for="name">Name</label><br />
+        <label for="name">{{ $t("main.name") }}</label
+        ><br />
         <input type="text" id="name" v-model="name" />
       </div>
 
       <div class="email">
-        <label for="email">E-Mail</label><br />
+        <label for="email">{{ $t("main.email") }}</label
+        ><br />
         <input type="email" id="email" v-model="email" />
       </div>
       <div class="password">
-        <label for="password">Password</label><br />
+        <label for="password">{{ $t("main.password") }}</label
+        ><br />
         <input type="password" id="password" v-model="password" />
       </div>
 

@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "axios": "^0.21.1",
+    "axios-cache-plugin": "^0.1.0",
     "core-js": "^3.6.5",
+    "idb": "^6.1.4",
     "vue": "^3.0.0",
-    "vue-i18n": "^9.2.0-beta.7",
+    "vue-i18n": "^9.1.0",
     "vue-router": "^4.0.11",
     "vuex": "^4.0.2"
   },

@@ -10,8 +10,9 @@ import App from "./App.vue";
 import HomePage from "./components/HomePage.vue";
 import ProductsSection from "./components/ProductsSection.vue";
 import ProductDetail from "./components/ProductDetail.vue";
-import userLogin from "./components/userLogin.vue";
-import userRegister from "./components/userRegister.vue";
+import UserLogin from "./components/UserLogin.vue";
+import UserRegister from "./components/UserRegister.vue";
+// import i18n from "./i18n.js";
 import i18n from "./i18n.js";
 const app = createApp(App).use(i18n);
 
@@ -53,12 +54,12 @@ const router = createRouter({
     {
       path: "/login",
       name: "login",
-      component: userLogin,
+      component: UserLogin,
     },
     {
       path: "/register",
       name: "register",
-      component: userRegister,
+      component: UserRegister,
     },
   ],
 });

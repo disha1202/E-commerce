@@ -1,3 +1,15 @@
 {
-  "main": { "welcome": "Hello from {company}!" }
+  "main": {
+    "welcome": "Hello from {company}!",
+    "men": "MEN",
+    "women": "WOMEN",
+    "electronics": "ELECTRONICS",
+    "jewelery": "JEWELERY",
+    "deals": "DEALS OF THE DAY",
+    "brands": "BIGGEST DEALS ON TOP BRANDS",
+    "categories": "CATEGORIES TO BAG",
+    "email": "E-mail",
+    "password": "Password",
+    "name": "Name"
+  }
 }

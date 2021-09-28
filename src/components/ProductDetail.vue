@@ -6,9 +6,10 @@
     <div class="details">
       <h2>{{ product.title }}</h2>
       <h3>Price: {{ product.price }}</h3>
+      <!-- {{ $n(product.price, "currency") }} -->
       <p>{{ product.description }}</p>
-      <!-- <i18n-n value="product.price" format="currency"></i18n-n> -->
-      <!-- <p>{{ $n(100, "currency") }}</p> -->
+      <!-- <i18n-n :value="product.price" format="currency"></i18n-n> -->
+      <!-- <p>{{ $n(product.price, "currency") }}</p> -->
     </div>
   </div>
 </template>

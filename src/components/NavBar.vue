@@ -7,24 +7,24 @@
       /></router-link>
       <li>
         <router-link :to="{ name: 'category', params: { category: men } }"
-          >MEN
+          >{{ $t("main.men") }}
         </router-link>
       </li>
       <li>
         <router-link :to="{ name: 'category', params: { category: women } }"
-          >WOMEN
+          >{{ $t("main.women") }}
         </router-link>
       </li>
       <li>
         <router-link
           :to="{ name: 'category', params: { category: 'electronics' } }"
-          >ELECTRONICS
+          >{{ $t("main.electronics") }}
         </router-link>
       </li>
       <li>
         <router-link
           :to="{ name: 'category', params: { category: 'jewelery' } }"
-          >JEWELERY
+          >{{ $t("main.jewelery") }}
         </router-link>
       </li>
     </ul>
